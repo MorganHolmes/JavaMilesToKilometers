@@ -1,9 +1,12 @@
+import javax.swing.*;
 public class Runner
 {
     private static double conversionRate = 1.609;
     
     public static void main(String args[]){
-        System.out.println(mileToKilo(3.6));
+        String userInput = JOptionPane.showInputDialog("Enter Miles");
+        double userInputDouble = Double.parseDouble(userInput);
+        System.out.println(userInputDouble + " Miles Equal To " + mileToKilo(userInputDouble) + " Kilometers");
         
     }
     
